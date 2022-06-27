@@ -1,0 +1,236 @@
+body{
+    margin: 0px;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+p,span,h1,h2,h3,li{
+    color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header{
+    background-color: rgba(33, 33, 33);
+    /* background-color: rgba(33, 33, 33, 0.98); */
+    height:  3.625em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+}
+.separador{
+    height: 100%;
+}
+.separador._1{
+    width: 67%;
+    margin-left: 1.875em;
+    display: flex;
+    justify-content: space-between;
+}
+.separador._2{
+    margin-right: 2.5em;
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dentro_1{
+    height: 100%;
+}
+.dentro_1._1{
+    width: 16.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dentro_1._2{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buscador{
+    width: 90%;
+    background-color: #333333;
+    height: 80%;
+    border-radius: 0.125em;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.microfono{
+    width: 10%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.microfonoborder{
+    border-radius: 50%;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lupa{
+    width: 10%;
+    background-color: #333333;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbuscar{
+    height: 90%;
+    width: 89.7%;
+    padding:0px;
+    border: 0px;
+    background-color: black;
+    color: white;
+}
+.atajos{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar{
+    border-radius: 50%;
+}
+.contenido{
+    margin-top: 3.625em;
+    background-color: hsl(0, 0%, 6.7%);
+    padding: 1.5em 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contenedorvideo{
+    width: 60vw;
+    height: 200vh;
+}
+.contenedormasvideos{
+    width: 30vw;
+    height: 300vh;
+}
+.likedislikecompartir{
+    display: flex;
+    justify-content: space-between;
+}
+.like ,.vistas, .dislike, .compartir, .graciasdonarunirte , .recortar ,.guardar,.more_mas{
+    display: flex;
+    align-items: center;
+}
+.like > section,.dislike section,.compartir section,.graciasdonarunirte section,.recortar section,.guardar section,.more_mas section{
+    height: 2.25em;
+    width: 2.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dislike > span{
+    width: 3.625em;
+}
+.contenedorvideo > h3{
+    margin: 0.83em 0px 0.5em 0px;
+}
+.categorias{
+    width: 100%;
+    height: 3.1875em;
+    display: flex;
+    justify-content: start;
+    
+    align-items: center;
+}
+.categoriascontenedor{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.categoriascontenedor > li{
+    padding: .7em 1em;
+    border-radius: 2em;
+    margin: 0em .5em;
+    background-color: #333333;
+    border-color: #cccccc36;
+    border-style: solid;
+    border-width: 1px;
+}
+.masvideos{
+    height: auto;
+}
+.otrovideo{
+    width: 100%;
+    height: 9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.otrovideo > .miniatura{
+    height: 90%;
+    width: 47%;
+    display: flex;
+    align-items: center;
+}
+.otrovideo > .texto{
+    height: 90%;
+    width: 45%;
+    margin-right: 5%;
+}
+.otrovideo > .texto span{
+    font-size: small;
+}
+.otrovideo > .texto div{
+    font-size: smaller;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333333;
+    display: inline-block;
+    padding: 1px 2px;
+    border-radius: 4px;
+    color: #ccc;
+}
+@media (max-width: 1016px) {
+    .contenido {
+      flex-direction: column;
+    }
+    /* .likedislikecompartir{
+        flex-direction: column;
+    } */
+}
+@media (max-width: 713px) {
+    .likedislikecompartir{
+        flex-direction: column;
+    }
+  }
+@media (max-width: 371px) {
+    .likedislikecompartir{
+        flex-direction: column;
+    }
+    .imagenyt{
+        display: none;
+    }
+    .separador._1{
+        margin: 0px;
+        width: 58%;
+    }
+    .separador._2{
+        margin: 0px;
+        width: 40%;
+    }
+    .contenedormasvideos{
+        width: 90%;
+    }
+    .dentro_1._2{
+        width: 80%;
+    }
+    .otrovideo{
+        width: 70%;
+    }
+}
